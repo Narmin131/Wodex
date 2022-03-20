@@ -1,0 +1,470 @@
+@import "variables";
+@import "media";
+*{
+    font-size: 10px;
+    font-family: $font;
+    text-decoration: none;
+    list-style-type: none;
+}
+.container-fluid{
+    max-width: 96%;
+    padding: 0;
+}
+//Header
+.site-header{
+    height: 13vh;
+    width: 100%;
+    .header-main{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+           .brand{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+           }
+           .ulis{
+             width: 50%;
+             height: 100%;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           .ullar{
+               width: 100%;
+               height: 100%;
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+               align-items: center;
+               margin: 0;
+               li{
+                   a{
+                       font-size: 1.6rem;
+                       text-decoration: none;
+                       color: black;
+                   }
+               }
+            }
+           }
+           .icons{
+             display: flex;
+             width: 20%;
+             height: 100%;
+             flex-direction: row;
+             justify-content: flex-end;
+             align-items: center;
+             i{
+                 font-size: 2rem;
+                 margin-left: 1rem;
+             }
+           }
+        }
+}
+
+.slider{
+    width: 100%;
+    height: 95vh;
+    .carousel{
+        width: 100%;
+        height: 100%;
+     background-color: rgb(255, 237, 243);
+     .carousel-item{
+         background-color: brown;
+         
+     }
+    }
+}
+
+// Partners section
+.partners{
+    width: 100%;
+    height: 23vh;
+    .partners-alt{
+        height: 100%;
+        opacity: .5;
+        .item{
+            transition: all .3s ease;
+            &:hover{
+                opacity: 1;
+            }
+            .photo4{
+                width: 93%;
+                height: 88%;
+            }
+        }
+    }
+}
+
+//Design section
+.design{
+    width: 100%;
+    height: 50vh;
+    // background-color: rgb(83, 67, 45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    .center-img{
+        width: 90%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // background-color: cadetblue;
+        position: relative;
+        .cnt{
+           position: absolute;
+           text-align: center;
+           width: 35%;
+           h2{
+            margin-bottom: 1.5rem;
+           }
+           h1{
+           font-weight: 400;
+           font-size: 3.5rem;
+           }
+           p{
+           font-size: 1.5rem;
+           border-bottom: 1px solid black;
+           margin-top: 1.5rem;
+           }
+        }
+    }
+}
+
+
+
+// Beds Storage section
+.beds{
+    width: 100%;
+    height: 50vh;
+    // background-color: rgb(88, 122, 185);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    .beds-img{
+        width: 90%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        // background-color: cadetblue;
+        position: relative;
+        .bed-text{
+           position: absolute;
+           text-align: center;
+           width: 35%;
+           h2{
+            margin-bottom: 1.5rem;
+           }
+           h1{
+           font-weight: 400;
+           font-size: 3.5rem;
+           }
+           p{
+           font-size: 1.5rem;
+           border-bottom: 1px solid black;
+           margin-top: 1.5rem;
+           }
+        }
+    }
+}
+
+
+//Cashback
+.cashback{
+    width:100% ;
+    height: 80vh;
+    background-image: url("../img/h1-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .center-text{
+        width: 60%;
+        height: 50%;
+        //  background-color: cadetblue;
+         display: flex;
+         flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        h1{
+         font-size: 2.3rem;
+        }
+        h2{
+         font-weight:600;
+         font-size: 3rem;
+         text-transform: uppercase;
+        }
+        button{
+            outline: none;
+            border: none;
+            color: black;
+            background-color: white;
+            font-size: 1.5rem;
+            padding: 13px 30px;
+        }
+     }
+}
+
+// Chair section
+.chair{
+    width: 100%;
+    height: 95vh;
+    // background-color: cornflowerblue;
+    .left-furnitures{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        // border: 2px solid rgb(131, 27, 27);
+        .item{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        // position: relative;
+        // background-color: blueviolet;
+        // border: 1px solid black;
+    &:hover .two{
+        opacity: 1;
+    }
+    .two{
+      transition: all .3s ease;
+      opacity: 0; 
+      position:absolute;
+      top: 0;
+      left: 0;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .icons{
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        //   background-color: blue;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 12%;
+          height: 50%;
+          transition: all .3s ease;
+          i{
+              width: 3.5rem;
+              height: 3.5rem;
+              background-color: #fff;
+              color: black;
+              font-size: 1.6rem;
+              line-height: 3.5rem;
+              text-align: center;
+              transition: all .3s;
+              cursor: pointer;
+              &:hover{
+                  color: #fff;
+                  background-color: #000;
+              }
+          }
+      }
+    }
+     .one{
+         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:hover .icon{
+          opacity: 1;
+        }
+        // background-color: brown;
+          h1{
+              font-size: 1.6rem;
+              font-weight: 600;
+              margin-top: 1.4rem;
+          }
+          p{
+              font-size: 1.4rem;
+              font-weight: 600;
+              margin-top: 1.1rem;
+          }
+      }
+
+    }
+}
+.head{
+font-size: 3.6rem;
+padding-top: 4rem;
+}
+.para{
+font-size: 1.6rem;
+color:#7A7A7A;
+}
+}
+
+ .blue{
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+ }
+
+ .icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+    height: 50%;
+    transition: all .3s ease; 
+    background-color: aquamarine;
+    opacity: 0;
+    i{
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: #fff;
+        color: black;
+        font-size: 1.6rem;
+        line-height: 3.5rem;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            color: #fff;
+            background-color: #000;
+        }
+    }
+ }
+
+
+
+ .photo{
+     background-color: cadetblue;
+     width: 100%;
+     height: 100%;
+     position: relative;
+ }
+
+
+//  Blog-text
+.blog-text{
+    width: 100%;
+    height: 35vh;
+    // background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 3.5rem;
+        }
+        p{
+            font-size: 1.7rem;
+            color: #7A7A7A;
+        }
+    }
+}
+
+.blogs{
+    width: 100%;
+    .blog1{
+        .blog{
+    
+        .blogimg{
+            width: 100%;
+            height: 60%;
+        }
+        h1{
+         font-size: 1.8rem;
+         padding-top: 1rem;
+         font-weight: 600;
+         border-top: 1px solid #7A7A7A;
+        }
+        p{
+         font-size: 1.3rem;
+         margin-top: 1.1rem;
+         color: #7A7A7A;
+         line-height: 2.5rem;
+        }
+        h6{
+            color: #7A7A7A;
+            font-size: 1.4rem;
+            padding: 1.2rem 0;
+            margin: 0;
+        }
+    }}
+    
+}
+
+// Footer
+footer{
+    height: 50vh;
+    .box1{
+        padding: 50px 10px 0 10px;
+        img{
+            margin-bottom:2.3rem;
+        }
+        p{
+            color: #7A7A7A;
+            font-size: 1.3rem;
+        }
+    }
+    .box2{
+        padding: 50px 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+        h1{
+          font-size: 2rem;
+          color: #000;
+          margin-bottom:2rem;
+        }
+        p{
+            font-size: 1.3rem;
+            color: #7A7A7A;
+            margin-bottom: 1.6rem;
+            line-height: 2.3rem;
+        }
+            a{
+             color: black;
+             font-size: 1.3rem;
+             transition: all .4s ease;
+             text-decoration: none;
+             margin-bottom: 1.7rem;
+             &:hover{
+                 color: #FDBF70;
+             }
+            }
+            input{
+                width: 70%;
+                font-size: 1.3rem;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+            button{
+                width: 30%;
+                font-size: 1.3rem;
+                border: none;
+                outline: none;
+                transition: all .4s ease;
+                background-color: transparent;
+                &:hover{
+                    color: #FDBF70;
+                }
+            }
+        
+    }
+}
