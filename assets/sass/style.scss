@@ -5,6 +5,7 @@
     font-family: $font;
     text-decoration: none;
     list-style-type: none;
+    box-sizing: border-box;
 }
 .container-fluid{
     max-width: 96%;
@@ -26,13 +27,13 @@
             justify-content: start;
             align-items: center;
            }
-           .ulis{
+           .ul-box{
              width: 50%;
              height: 100%;
            display: flex;
            flex-direction: row;
            align-items: center;
-           .ullar{
+           .main-ul{
                width: 100%;
                height: 100%;
                display: flex;
@@ -40,11 +41,60 @@
                justify-content: space-between;
                align-items: center;
                margin: 0;
-               li{
+               .drop-li{
+                   position: relative;
+                   &:hover .drop-ul{
+                     opacity: 1;
+                     visibility: visible;
+                   }
+                .drop-ul{
+                   position: absolute;
+                   background-color: #ffffff;
+                   top: 7.5rem;
+                   padding: 0;
+                   z-index: 23;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                   width: 150px;
+                   transition: all .3s ease;
+                   border: 1px solid #eef2f7;
+                   opacity: 0;
+                   visibility: hidden;
+
+                   li{
+                     border-bottom: 1px solid #eef2f7;
+                       width: 100%;
+                       cursor: pointer;
+                       display: flex;
+                       flex-direction: column;
+                       justify-content:flex-start;
+                       align-items: flex-start;
+                       padding: 13px;
+                       &:hover a{
+                        color: #FDBF70;
+                       }
+                       a{
+                        transition: all .3s;
+                        font-size: 1.3rem;
+                       }
+                       
+                   }
+                }
+               }
+               .nav-item{
+                   height: 100%;
+                   text-align: center;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   cursor: pointer;
                    a{
                        font-size: 1.6rem;
                        text-decoration: none;
                        color: black;
+                       
                    }
                }
             }
@@ -64,29 +114,76 @@
         }
 }
 
+
+// Slider section
 .slider{
     width: 100%;
-    height: 95vh;
+    height: 110vh;
     .carousel{
-        width: 100%;
-        height: 100%;
-     background-color: rgb(255, 237, 243);
-     .carousel-item{
-         background-color: brown;
-         
+    width: 100%;
+    height: 93%;
+    background-color: #ffedf3;
+         .img{
+             width: 90%;
+             height: 100%;
+             display: flex;
+             flex-direction: row;
+             justify-content: flex-end;
+             padding-top: 2rem;
+         }
+         .ed{
+             display: flex;
+             flex-direction: row;
+             justify-content: flex-end;
+         }
+         .pdng{
+             padding-top: 10rem;
+         }
+         .text{
+             width: 90%;
+             height: 100%;
+           justify-content: center;
+             display: flex;
+             flex-direction: column;
+             padding-left: 3rem;
+             h1{
+              font-weight: 700;
+              font-size: 4rem;
+              line-height: 1.5;
+             }
+            p{
+            font-size: 1.7rem;
+            line-height: 1.8;
+
+         }
+         button{
+             outline: none;
+             border: none;
+             background-color: transparent;
+             color: #000;
+             border-bottom: 1px solid black;
+             padding-bottom: 5px;
+             font-size: 1.4rem;
+             transition: all .3s;
+             width: 25%;
+             &:hover {
+                   border-bottom-color: #FDBF70;
+             }
+            }
+        }
      }
-    }
 }
 
 // Partners section
 .partners{
     width: 100%;
-    height: 23vh;
+    height: 25vh;
     .partners-alt{
         height: 100%;
-        opacity: .5;
         .item{
-            transition: all .3s ease;
+            transition: all .4s ease;
+            cursor: pointer;
+            opacity: .5;
             &:hover{
                 opacity: 1;
             }
@@ -137,7 +234,6 @@
 }
 
 
-
 // Beds Storage section
 .beds{
     width: 100%;
@@ -169,7 +265,6 @@
            }
            p{
            font-size: 1.5rem;
-           border-bottom: 1px solid black;
            margin-top: 1.5rem;
            }
         }
@@ -204,14 +299,46 @@
          font-size: 3rem;
          text-transform: uppercase;
         }
-        button{
-            outline: none;
-            border: none;
-            color: black;
-            background-color: white;
-            font-size: 1.5rem;
-            padding: 13px 30px;
-        }
+        .button {
+            display: inline-block;
+            padding: 1.7rem 3rem;
+            font-size: 1.4rem;
+            color: #000;
+            transition: all .5s;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            z-index: 1;
+            &:after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              background-color: #fff;
+              height: 100%;
+              z-index: -2;
+            }
+            &:before {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0%;
+              height: 100%;
+               background-color: #FDBF70;
+              transition: all .5s;
+              z-index: -1;
+            }
+            &:hover {
+              color: #fff;
+              &:before {
+                width: 100%;
+              }
+            }
+          }
+          
      }
 }
 
@@ -224,14 +351,11 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        // border: 2px solid rgb(131, 27, 27);
         .item{
         display: flex;
         flex-direction: column;
         padding: 10px;
-        // position: relative;
-        // background-color: blueviolet;
-        // border: 1px solid black;
+        cursor: pointer;
     &:hover .two{
         opacity: 1;
     }
@@ -250,12 +374,11 @@
           position: absolute;
           right: 0;
           bottom: 0;
-        //   background-color: blue;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           align-items: center;
-          width: 12%;
+          width: 16%;
           height: 50%;
           transition: all .3s ease;
           i{
@@ -281,6 +404,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         &:hover .icon{
           opacity: 1;
         }
@@ -323,10 +447,9 @@ color:#7A7A7A;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 15%;
+    width: 16%;
     height: 50%;
     transition: all .3s ease; 
-    background-color: aquamarine;
     opacity: 0;
     i{
         width: 3.5rem;
@@ -343,11 +466,7 @@ color:#7A7A7A;
         }
     }
  }
-
-
-
  .photo{
-     background-color: cadetblue;
      width: 100%;
      height: 100%;
      position: relative;
@@ -380,9 +499,10 @@ color:#7A7A7A;
 
 .blogs{
     width: 100%;
+    height: 75vh;
     .blog1{
         .blog{
-    
+                padding: 0 8px; 
         .blogimg{
             width: 100%;
             height: 60%;
@@ -410,8 +530,10 @@ color:#7A7A7A;
 }
 
 // Footer
-footer{
-    height: 50vh;
+.ftr{
+    height: 70vh;
+    border-top: 1px solid #ccc;
+    padding-top:4rem ;
     .box1{
         padding: 50px 10px 0 10px;
         img{
@@ -440,7 +562,7 @@ footer{
             a{
              color: black;
              font-size: 1.3rem;
-             transition: all .4s ease;
+             transition: all .2s ease;
              text-decoration: none;
              margin-bottom: 1.7rem;
              &:hover{
@@ -459,7 +581,7 @@ footer{
                 font-size: 1.3rem;
                 border: none;
                 outline: none;
-                transition: all .4s ease;
+                transition: all .2s ease;
                 background-color: transparent;
                 &:hover{
                     color: #FDBF70;
@@ -468,3 +590,44 @@ footer{
         
     }
 }
+
+
+.ft-text{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    h1{
+        font-size: 1.4rem;
+    }
+}
+// Pillow-bedroom section
+
+
+//  Blog-text
+.blog-text{
+    width: 100%;
+    height: 35vh;
+    // background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 3.5rem;
+        }
+        p{
+            font-size: 1.7rem;
+            color: #7A7A7A;
+        }
+    }
+}
+
