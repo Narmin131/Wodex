@@ -1,11 +1,11 @@
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width:767px) { 
+@media (max-width:575px) { 
     .container-fluid{
         max-width: 88% !important;
     }
     
 .partners{
     height: auto !important;
+    padding: 4rem 0 !important;
     .partners-alt{
         height: auto;
         .item{
@@ -35,7 +35,7 @@
 .brand{
     width: 40% !important;
 }
-.ulis{
+.main-ul{
     display: none !important;
 }
 .chair{
@@ -87,19 +87,291 @@
         }
     }
 }
- }
+
+.blogs{
+    height: auto !important;
+}
+.ftr{
+    height: auto !important;
+}
+.slider{
+    height: auto !important;
+    h1{
+        font-size: 2rem !important;
+    }
+    p{
+        font-size: 1.4rem !important;
+    }
+    .pdng{
+        padding:5rem 0 !important;
+    }
+    .text{
+        width: 100% !important;
+        button{
+            width: 40% !important;
+        }
+    }
+}
+header {
+    .brand{
+        width: 70% !important;
+    }
+}
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width:767px) { 
+    .container-fluid{
+        max-width: 88% !important;
+    }
+    
+.partners{
+    height: auto !important;
+    padding: 4rem 0 !important;
+    .partners-alt{
+        height: auto;
+        .item{
+            height: auto;
+            .photo{
+                width: 80% !important;
+                height: 70% !important;
+            }
+        }
+    }
+}
+.cnt{
+    height: auto !important;
+    h2{
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem !important;
+       }
+       h1{
+       font-weight: 600 !important;
+       font-size: 1.7rem !important;
+       }
+       p{
+       font-size: 1.3rem !important;
+       margin-top: 1.5rem;
+       }
+}
+.brand{
+    width: 40% !important;
+}
+.main-ul{
+    display: none !important;
+}
+.chair{
+    height: auto !important;
+    .item{
+        height: auto !important;
+        .one{
+            height: auto !important;
+            h1{
+                font-size: 1.2rem !important;
+                text-align: center;
+            } 
+        }
+        .two{
+            height: auto !important;
+            .icons{
+                height: auto !important;
+                width: auto !important;
+            }
+        }
+       
+        
+    }
+      .photo{
+            height: auto !important;
+            
+            .icon{
+                height: auto !important;
+                width: auto !important;
+            }
+        }
+}
+
+.cashback{
+    height: 60vh !important;
+    .center-text{
+        h2{
+            font-size: 2rem !important;
+            text-align: center !important ;
+        }
+    }
+}
+.beds{
+    .beds-img{
+        .bed-text{
+            h1{
+                font-size: 1.3rem !important;
+            }
+        }
+    }
+}
+
+.blogs{
+    height: auto !important;
+}
+.ftr{
+    height: auto !important;
+}
+.slider{
+    height: auto !important;
+    h1{
+        font-size: 2rem !important;
+    }
+    p{
+        font-size: 1.4rem !important;
+    }
+    .pdng{
+        padding:5rem 0 !important;
+    }
+    .text{
+        width: 100% !important;
+        button{
+            width: 60% !important;
+        }
+    }
+}
+}
 
 // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) {
+@media (min-width: 768px) and (max-width:992px) {
+ 
+    header {
+        .main-ul{
+        display: none !important;
+    }
+    .brand{
+        width: 30% !important;
+    }
+    }
+    
+    .slider{
+        button{
+            width: 60% !important;
+        }
+    }
+    .chair{
+        height: auto !important;
+        .item{
+            height: auto !important;
+            .one{
+                height: auto !important;
+                h1{
+                    font-size: 1.2rem !important;
+                    text-align: center;
+                } 
+            }
+            .two{
+                height: auto !important;
+                .icons{
+                    height: auto !important;
+                    width: auto !important;
+                }
+            }
+           
+            
+        }
+          .photo{
+                height: auto !important;
+                
+                .icon{
+                    height: auto !important;
+                    width: auto !important;
+                }
+            }
+    }
+    .beds{
+        .beds-img{
+            .bed-text{
+                h1{
+                    font-size: 1.7rem !important;
+                }
+            }
+        }
+    }
+    .cashback{
+        height: 60vh !important;
+        .center-text{
+            h2{
+                font-size: 2rem !important;
+                text-align: center !important ;
+            }
+        }
+    }
+    .cnt{
+        height: auto !important;
+        h2{
+            margin-bottom: 1.5rem;
+            font-size: 1.7rem !important;
+           }
+           h1{
+           font-weight: 600 !important;
+           font-size: 2rem !important;
+           }
+           p{
+           font-size: 1.5rem !important;
+           margin-top: 1.5rem;
+           }
+    }
+    .ftr{
+        .box2{
+            padding-left: 0 !important;
+        }
+    }
+ }
 
-//  }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .slider{
+        button{
+            width: 50% !important;
+        }
+    }
+    .cnt{
+        height: auto !important;
+        h2{
+            margin-bottom: 1.5rem;
+            font-size: 1.7rem !important;
+           }
+           h1{
+           font-weight: 600 !important;
+           font-size: 2rem !important;
+           }
+           p{
+           font-size: 1.5rem !important;
+           margin-top: 1.5rem;
+           }
+    }
+    .beds{
+        .beds-img{
+            .bed-text{
+                h1{
+                    font-size: 1.7rem !important;
+                }
+            }
+        }
+    }
+    .item{
+        h1{
+            font-size: 1.2rem !important;
+        }
+    }
+    .chair{
+        height: auto !important;
+    }
+    .cashback{
+        height: 60vh !important;
+        .center-text{
+            h2{
+                font-size: 2rem !important;
+                text-align: center !important ;
+            }
+        }
+    }
+ }
 
-// // Large devices (desktops, 992px and up)
-// @media (min-width: 992px) { 
-
-//  }
-
-// // X-Large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) { 
-
-// }

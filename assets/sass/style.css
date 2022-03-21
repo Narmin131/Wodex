@@ -1,9 +1,10 @@
-@media (min-width: 576px) and (max-width: 767px) {
+@media (max-width: 575px) {
   .container-fluid {
     max-width: 88% !important;
   }
   .partners {
     height: auto !important;
+    padding: 4rem 0 !important;
   }
   .partners .partners-alt {
     height: auto;
@@ -33,7 +34,7 @@
   .brand {
     width: 40% !important;
   }
-  .ulis {
+  .main-ul {
     display: none !important;
   }
   .chair {
@@ -72,6 +73,239 @@
   }
   .beds .beds-img .bed-text h1 {
     font-size: 1.3rem !important;
+  }
+  .blogs {
+    height: auto !important;
+  }
+  .ftr {
+    height: auto !important;
+  }
+  .slider {
+    height: auto !important;
+  }
+  .slider h1 {
+    font-size: 2rem !important;
+  }
+  .slider p {
+    font-size: 1.4rem !important;
+  }
+  .slider .pdng {
+    padding: 5rem 0 !important;
+  }
+  .slider .text {
+    width: 100% !important;
+  }
+  .slider .text button {
+    width: 40% !important;
+  }
+  header .brand {
+    width: 70% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container-fluid {
+    max-width: 88% !important;
+  }
+  .partners {
+    height: auto !important;
+    padding: 4rem 0 !important;
+  }
+  .partners .partners-alt {
+    height: auto;
+  }
+  .partners .partners-alt .item {
+    height: auto;
+  }
+  .partners .partners-alt .item .photo {
+    width: 80% !important;
+    height: 70% !important;
+  }
+  .cnt {
+    height: auto !important;
+  }
+  .cnt h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem !important;
+  }
+  .cnt h1 {
+    font-weight: 600 !important;
+    font-size: 1.7rem !important;
+  }
+  .cnt p {
+    font-size: 1.3rem !important;
+    margin-top: 1.5rem;
+  }
+  .brand {
+    width: 40% !important;
+  }
+  .main-ul {
+    display: none !important;
+  }
+  .chair {
+    height: auto !important;
+  }
+  .chair .item {
+    height: auto !important;
+  }
+  .chair .item .one {
+    height: auto !important;
+  }
+  .chair .item .one h1 {
+    font-size: 1.2rem !important;
+    text-align: center;
+  }
+  .chair .item .two {
+    height: auto !important;
+  }
+  .chair .item .two .icons {
+    height: auto !important;
+    width: auto !important;
+  }
+  .chair .photo {
+    height: auto !important;
+  }
+  .chair .photo .icon {
+    height: auto !important;
+    width: auto !important;
+  }
+  .cashback {
+    height: 60vh !important;
+  }
+  .cashback .center-text h2 {
+    font-size: 2rem !important;
+    text-align: center !important;
+  }
+  .beds .beds-img .bed-text h1 {
+    font-size: 1.3rem !important;
+  }
+  .blogs {
+    height: auto !important;
+  }
+  .ftr {
+    height: auto !important;
+  }
+  .slider {
+    height: auto !important;
+  }
+  .slider h1 {
+    font-size: 2rem !important;
+  }
+  .slider p {
+    font-size: 1.4rem !important;
+  }
+  .slider .pdng {
+    padding: 5rem 0 !important;
+  }
+  .slider .text {
+    width: 100% !important;
+  }
+  .slider .text button {
+    width: 60% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  header .main-ul {
+    display: none !important;
+  }
+  header .brand {
+    width: 30% !important;
+  }
+  .slider button {
+    width: 60% !important;
+  }
+  .chair {
+    height: auto !important;
+  }
+  .chair .item {
+    height: auto !important;
+  }
+  .chair .item .one {
+    height: auto !important;
+  }
+  .chair .item .one h1 {
+    font-size: 1.2rem !important;
+    text-align: center;
+  }
+  .chair .item .two {
+    height: auto !important;
+  }
+  .chair .item .two .icons {
+    height: auto !important;
+    width: auto !important;
+  }
+  .chair .photo {
+    height: auto !important;
+  }
+  .chair .photo .icon {
+    height: auto !important;
+    width: auto !important;
+  }
+  .beds .beds-img .bed-text h1 {
+    font-size: 1.7rem !important;
+  }
+  .cashback {
+    height: 60vh !important;
+  }
+  .cashback .center-text h2 {
+    font-size: 2rem !important;
+    text-align: center !important;
+  }
+  .cnt {
+    height: auto !important;
+  }
+  .cnt h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem !important;
+  }
+  .cnt h1 {
+    font-weight: 600 !important;
+    font-size: 2rem !important;
+  }
+  .cnt p {
+    font-size: 1.5rem !important;
+    margin-top: 1.5rem;
+  }
+  .ftr .box2 {
+    padding-left: 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .slider button {
+    width: 50% !important;
+  }
+  .cnt {
+    height: auto !important;
+  }
+  .cnt h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem !important;
+  }
+  .cnt h1 {
+    font-weight: 600 !important;
+    font-size: 2rem !important;
+  }
+  .cnt p {
+    font-size: 1.5rem !important;
+    margin-top: 1.5rem;
+  }
+  .beds .beds-img .bed-text h1 {
+    font-size: 1.7rem !important;
+  }
+  .item h1 {
+    font-size: 1.2rem !important;
+  }
+  .chair {
+    height: auto !important;
+  }
+  .cashback {
+    height: 60vh !important;
+  }
+  .cashback .center-text h2 {
+    font-size: 2rem !important;
+    text-align: center !important;
   }
 }
 
@@ -291,6 +525,16 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-top: 2rem;
+}
+
+.slider .carousel .img .slider1img {
+  width: 50%;
+  height: 90%;
+}
+
+.slider .carousel .img .slider2img {
+  width: 80%;
+  height: 93%;
 }
 
 .slider .carousel .ed {
