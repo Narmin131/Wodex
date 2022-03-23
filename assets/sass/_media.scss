@@ -33,7 +33,7 @@
        }
 }
 .brand{
-    width: 40% !important;
+    width: 60% !important;
 }
 .main-ul{
     display: none !important;
@@ -107,9 +107,6 @@
     }
     .text{
         width: 100% !important;
-        button{
-            width: 40% !important;
-        }
     }
 }
 header {
@@ -231,9 +228,6 @@ header {
     }
     .text{
         width: 100% !important;
-        button{
-            width: 60% !important;
-        }
     }
 }
 }
@@ -248,12 +242,6 @@ header {
     .brand{
         width: 30% !important;
     }
-    }
-    
-    .slider{
-        button{
-            width: 60% !important;
-        }
     }
     .chair{
         height: auto !important;
@@ -327,11 +315,6 @@ header {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
-    .slider{
-        button{
-            width: 50% !important;
-        }
-    }
     .cnt{
         height: auto !important;
         h2{

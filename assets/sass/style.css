@@ -32,7 +32,7 @@
     margin-top: 1.5rem;
   }
   .brand {
-    width: 40% !important;
+    width: 60% !important;
   }
   .main-ul {
     display: none !important;
@@ -94,9 +94,6 @@
   }
   .slider .text {
     width: 100% !important;
-  }
-  .slider .text button {
-    width: 40% !important;
   }
   header .brand {
     width: 70% !important;
@@ -200,9 +197,6 @@
   .slider .text {
     width: 100% !important;
   }
-  .slider .text button {
-    width: 60% !important;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -211,9 +205,6 @@
   }
   header .brand {
     width: 30% !important;
-  }
-  .slider button {
-    width: 60% !important;
   }
   .chair {
     height: auto !important;
@@ -273,9 +264,6 @@
 }
 
 @media (min-width: 992px) {
-  .slider button {
-    width: 50% !important;
-  }
   .cnt {
     height: auto !important;
   }
@@ -563,6 +551,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -581,21 +572,20 @@
   line-height: 1.8;
 }
 
-.slider .carousel .text button {
+.slider .carousel .text .now {
   outline: none;
   border: none;
   background-color: transparent;
   color: #000;
-  border-bottom: 1px solid black;
-  padding-bottom: 5px;
+  border: 1px solid black;
+  padding: 6px 20px;
   font-size: 1.4rem;
   -webkit-transition: all .3s;
   transition: all .3s;
-  width: 25%;
 }
 
-.slider .carousel .text button:hover {
-  border-bottom-color: #FDBF70;
+.slider .carousel .text .now:hover {
+  border-color: #FDBF70;
 }
 
 .partners {
